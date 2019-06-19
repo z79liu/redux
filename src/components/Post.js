@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+//this component renders the list of posts
 class Post extends Component {
   constructor(props){
     super(props);
@@ -7,6 +7,7 @@ class Post extends Component {
       posts : []
     }
   }
+  //fetch to json place holder and then use its promise to set state
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(res => res.json())
